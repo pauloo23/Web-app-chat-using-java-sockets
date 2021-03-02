@@ -1,0 +1,54 @@
+.sendButton {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:7px;
+	border:1px solid #8f1717;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.sendButton:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+
+.sendButton:active {
+	position:relative;
+	top:1px;
+}
+
+.userButton {
+	background-color:#44c767;
+	border-radius:7px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-weight:bold;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size:15px;
+	padding:11px 4px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.userButton:hover {
+	background-color:#5cbf2a;
+}
+
+.userButton:active {
+	position:relative;
+	top:1px;
+}

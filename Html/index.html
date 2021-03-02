@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<title>Sistemas Distribuidos</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/buttons.css">
+		<link rel="stylesheet" type="text/css" href="css/boxes.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="sweetalert2.all.min.js"></script>
+
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script  type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body class="pageBackground col-sm-12">
+        <div class="navbar">
+        	<img src="img/logo.jpg" class="logo"/>
+			<h1 class="mainTitle">
+				Sistemas Distribuídos
+			</h1>
+			<a class="btn btn-danger btn-lg" onclick="logOut()">
+  				Logout 
+  			</a>
+		</div>
+
+		<div class ="row mainContainer">
+			<div class="offset-sm-1 col-sm-6">
+				<h1 class="subTitle text-center">
+					Caixa de diálogo
+				</h1>
+				<textarea class="dialogBox col-sm-12" id="messagesTextArea" readonly="readonly" rows="12" cols="60"/></textarea>
+			</div>
+			<div class ="col-sm-3 offset-sm-1">
+				<h1 class ="subTitle">
+			   		Users
+			   	</h1>		 
+				<textarea class="usersBox col-sm-12" id="usersTextArea" readonly="readonly" rows="12" cols="8" ></textarea>
+			</div>
+		</div>
+		<div class="row offset-sm-1 col-sm-10">
+			<input placeholder="Insere o teu nickname ... "  type="text" class="messageBox col-sm-7" id="input"/>
+
+			<input type="button" value="Enviar" class="sendButton" onclick="setMsg()" />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select class="selectType" id="typeSelect">
+			    <option value="Aluno">Aluno</option>
+			    <option value="Professor">Professor</option>
+			    <option value="Outro">Outro</option>
+			</select>
+			<input type="button" value="Insira Nickname" class="userButton" id="registo"  onclick="setUser()"/>
+		</div>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;
+		<input type="button" value=" Atualizar dados " class="userButton" onclick="getMessages(); getUsers()"/>
+		
+
+	</body>
+</html>
